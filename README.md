@@ -1,55 +1,55 @@
-# Pet Care (Patient Management System)
+# Pet Care (Sistema de Gestión de Pacientes)
 
-This is a basic patient management system designed specifically for veterinarians. 
+Este es un sistema básico de gestión de pacientes diseñado específicamente para veterinarios. 
 
-The application is built using Laravel, Inertia, and Vue 3 with an API approach, providing a seamless user experience.
+La aplicación está construida utilizando Laravel, Inertia y Vue 3 con un enfoque basado en API, proporcionando una experiencia de usuario fluida.
 
-# Features
-The application allows veterinarians to manage:
+# Características
+La aplicación permite a los veterinarios gestionar:
 
-- Clients: Keep track of all your clients in one place. Add, update, and delete client information as needed.
-- Patients: Manage all patient information, including medical history, treatment plans, and more.
-- Appointments: Schedule and manage appointments. The system allows you to view your calendar.
-- Inventory: Keep track of all your clinic’s inventory. This includes medication, equipment, and any other items necessary for your practice.
+- Clientes: Mantén un registro de todos tus clientes en un solo lugar. Agrega, actualiza y elimina la información de los clientes según sea necesario.
+- Pacientes: Gestiona toda la información de los pacientes, incluyendo historial médico, planes de tratamiento y más.
+- Citas: Programa y gestiona citas. El sistema permite ver tu calendario.
+- Inventario: Lleva el control de todo el inventario de tu clínica. Esto incluye medicamentos, equipo y cualquier otro artículo necesario para tu práctica.
 
-# Installation
+# Instalación
 
-Install PHP dependencies
-````
+Instalar dependencias de PHP
+
 composer install
-````
-Generate a new App Key
-````
+
+Generar una nueva clave de la aplicación
+
 php artisan key:generate
-````
-Link the image directory
-````
+
+Vincular el directorio de imágenes
+
 php artisan storage:link
-````
-Install node packages
-````
+
+Instalar paquetes de Node
+
 npm install
-````
-Migrate the database
-````
+
+Migrar la base de datos
+
 php artisan migrate
-````
-Seed the `species` and `breeds` tables
+
+Poblar las tablas `species` y `breeds`
 ```
 php artisan db:seed --class=SpeciesSeeder
 
 php artisan db:seed --class=BreedsSeeder
 ```
 
-# Testing
-Test the `ClientController`
-````
+# Pruebas
+Probar el `ClientController`
+
 ./vendor/bin/phpunit tests/Feature/ClientTest.php
-````
+
 
 # Seeders
-For local development
-````
+Para desarrollo local
+
 php artisan db:seed --class=UserSeeder
 
 php artisan db:seed --class=ClientsSeeder
@@ -61,12 +61,13 @@ php artisan db:seed --class=BreedsSeeder
 php artisan db:seed --class=PetsSeeder
 
 php artisan db:seed --class=ItemsSeeder
-````
 
-# Screenshots
 
-![Pets table](https://i.imgur.com/GAqDR3K.png)
+# Capturas de Pantalla
 
-![Edit Pet](https://i.imgur.com/s0aeu2Q.jpeg)
+![Tabla de mascotas](https://i.imgur.com/GAqDR3K.png)
 
-![Calendar](https://i.imgur.com/H1uGqa3.jpeg)
+![Editar Mascota](https://i.imgur.com/s0aeu2Q.jpeg)
+
+![Calendario](https://i.imgur.com/H1uGqa3.jpeg)
+```
